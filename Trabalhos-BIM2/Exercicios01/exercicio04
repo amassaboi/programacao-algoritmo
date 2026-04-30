@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, menor, maior;
+    
+    cout << "Digite o 1º número: ";
+    cin >> n;
+    menor = n;
+    maior = n;
+    
+    for (int i = 2; i <= 10; i++) {
+        cout << "Digite o " << i << "º número: ";
+        cin >> n;
+        if (n < menor) {
+            menor = n;
+        }
+        if (n > maior) {
+            maior = n;
+        }
+    }
+    
+    cout << "Menor = " << menor << endl;
+    cout << "Maior = " << maior << endl;
+    
+    return 0;
+}

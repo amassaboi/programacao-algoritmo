@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantidade;
+    float altura;
+    float soma = 0;
+
+    cin >> quantidade;
+
+    // Proteção contra divisão por zero
+    if (quantidade > 0) {
+        for (int i = 1; i <= quantidade; i++) {
+            cin >> altura;
+            soma += altura;
+        }
+
+        float media = soma / quantidade;
+        cout << "Media = " << media << endl;
+    } else {
+        cout << "A quantidade deve ser maior que zero!" << endl;
+    }
+
+    return 0;
+}

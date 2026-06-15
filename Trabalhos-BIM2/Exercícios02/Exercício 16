@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int vetor[15];
+
+    for (int i = 0; i < 15; i++) {
+        cin >> vetor[i];
+    }
+
+    int indiceMenor = 0;
+    int indiceMaior = 0;
+
+    for (int i = 1; i < 15; i++) {
+        if (vetor[i] < vetor[indiceMenor]) {
+            indiceMenor = i;
+        }
+
+        if (vetor[i] > vetor[indiceMaior]) {
+            indiceMaior = i;
+        }
+    }
+
+    cout << "Indice do menor valor: " << indiceMenor << endl;
+    cout << "Indice do maior valor: " << indiceMaior << endl;
+
+    return 0;
+}

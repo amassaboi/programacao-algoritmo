@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool palindromo(string palavra) {
+    int fim = palavra.size() - 1;
+
+    for (int i = 0; i < palavra.size() / 2; i++) {
+        if (palavra[i] != palavra[fim - i])
+            return false;
+    }
+
+    return true;
+}
+
+int main() {
+    string palavra;
+
+    cin >> palavra;
+
+    if (palindromo(palavra))
+        cout << "Palindromo";
+    else
+        cout << "Nao e palindromo";
+
+    return 0;
+}

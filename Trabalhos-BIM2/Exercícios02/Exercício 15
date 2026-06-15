@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int vetor[20];
+    int indice = -1;
+
+    for (int i = 0; i < 20; i++) {
+        cin >> vetor[i];
+
+        if (vetor[i] < 0 && indice == -1) {
+            indice = i;
+        }
+    }
+
+    if (indice != -1)
+        cout << "Primeiro negativo no indice: " << indice << endl;
+    else
+        cout << "Nao existe numero negativo." << endl;
+
+    return 0;
+}

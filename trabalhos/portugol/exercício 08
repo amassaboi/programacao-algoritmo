@@ -1,0 +1,31 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 09/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+          real qtd_salariofixo, qtd_comissao, qtd_percentual, qtd_valorvendas, qtd_valorfinal
+          inteiro qtd_venda
+		escreva ("\nQual o salário fixo? ")
+		leia (qtd_salariofixo)
+		escreva ("\nQual o percentual por venda? ")
+		leia (qtd_percentual)
+		escreva ("\nQual o valor das vendas? ")
+		leia (qtd_valorvendas)
+		escreva ("\nQuantas vendas foram efetuadas? ")
+		leia (qtd_venda)
+		qtd_percentual = qtd_percentual / 100
+          qtd_comissao = qtd_venda * qtd_valorvendas * qtd_percentual
+		qtd_valorfinal = qtd_comissao + qtd_salariofixo
+
+		escreva ("\nO valor da sua comissão é\n" + qtd_comissao)
+		escreva ("\nSomado ao salário fixo, o total é \n" + qtd_valorfinal)
+	}
+}

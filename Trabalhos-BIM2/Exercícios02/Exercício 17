@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int vetor1[10];
+    int vetor2[10];
+    int somaPositivos = 0;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> vetor1[i];
+        vetor2[i] = -vetor1[i];
+    }
+
+    for (int i = 0; i < 10; i++) {
+        if (vetor1[i] > 0)
+            somaPositivos += vetor1[i];
+
+        if (vetor2[i] > 0)
+            somaPositivos += vetor2[i];
+    }
+
+    cout << "Vetor original: ";
+    for (int i = 0; i < 10; i++) {
+        cout << vetor1[i] << " ";
+    }
+
+    cout << endl;
+
+    cout << "Vetor invertido: ";
+    for (int i = 0; i < 10; i++) {
+        cout << vetor2[i] << " ";
+    }
+
+    cout << endl;
+    cout << "Soma dos positivos: " << somaPositivos << endl;
+
+    return 0;
+}

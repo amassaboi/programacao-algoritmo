@@ -1,0 +1,28 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 05/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	funcao inicio()
+	{
+		cadeia qtd_nome
+		inteiro qtd_idade, qtd_anos, qtd_meses, qtd_dias
+		
+		escreva("Digite o seu nome: ")
+		leia(qtd_nome)
+		
+		escreva("Digite a sua idade em anos, ", qtd_nome, ": ")
+		leia(qtd_idade)
+		
+		qtd_anos = qtd_idade
+		qtd_meses = qtd_anos * 12
+		qtd_dias = qtd_anos * 365
+		
+		escreva("Você possui aproximadamente ", qtd_anos, " anos, ", qtd_meses, " meses ou ", qtd_dias, " dias de idade.")
+	}
+}

@@ -1,0 +1,38 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 11/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	funcao inicio()
+	{
+		inteiro moeda_1cntv, moeda_5cntv, moeda_10cntv, moeda_25cntv, moeda_50cntv, moeda_1real
+		
+		escreva("Insira a quantidade de moedas de 1 centavo: \n")
+		leia(moeda_1cntv)
+		escreva("Valor: ", moeda_1cntv * 0.01, "\n")
+		escreva("Insira a quantidade de moedas de 5 centavos: \n")
+		leia(moeda_5cntv)
+		escreva("Valor: ", moeda_5cntv * 0.05, "\n")
+		escreva("Insira a quantidade de moedas de 10 centavos: \n")
+		leia(moeda_10cntv)
+		escreva("Valor: ", moeda_10cntv * 0.10, "\n")
+		escreva("Insira a quantidade de moedas de 25 centavos: \n")
+		leia(moeda_25cntv)
+		escreva("Valor: ", moeda_25cntv * 0.25, "\n")
+		escreva("Insira a quantidade de moedas de 50 centavos: \n")
+		leia(moeda_50cntv)
+		escreva("Valor: ", moeda_50cntv * 0.50, "\n")
+		escreva("Insira a quantidade de moedas de 1 real: \n")	
+		leia(moeda_1real)
+		escreva("Valor: ", moeda_1real * 1.00, "\n")
+		
+		
+		escreva("\nTotal:\n", (moeda_1cntv * 0.01 + moeda_5cntv * 0.05 + moeda_10cntv * 0.10 + moeda_25cntv * 0.25 + moeda_50cntv * 0.50 + moeda_1real * 1.00), "\n")
+
+	}
+}

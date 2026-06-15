@@ -1,0 +1,20 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 09/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro qtd_quilos, qtd_gramas
+	escreva("Seu peso em Quilos ")
+	leia (qtd_quilos)
+	qtd_gramas = 1000*qtd_quilos
+	escreva("\n Em gramas: " +qtd_gramas +"\n")
+	}
+}

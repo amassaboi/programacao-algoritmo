@@ -1,0 +1,38 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 09/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+    funcao inicio()
+    {
+        real peso
+        real percentual
+        real aumento_diario
+        real aumento_total
+        real novo_peso
+        inteiro dias
+
+        escreva("Digite o peso do boi: ")
+        leia(peso)
+
+        escreva("Digite o percentual de engorda por dia: ")
+        leia(percentual)
+
+        escreva("Digite a quantidade de dias: ")
+        leia(dias)
+
+        aumento_diario = peso * percentual / 100
+        aumento_total = aumento_diario * dias
+        novo_peso = peso + aumento_total
+
+        escreva("Peso original: ", peso, "\n")
+        escreva("Percentual diário: ", percentual, "%\n")
+        escreva("Dias: ", dias, "\n")
+        escreva("Novo peso: ", novo_peso, "\n")
+    }
+}

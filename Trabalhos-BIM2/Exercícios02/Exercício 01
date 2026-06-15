@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+bool impar(int n) {
+    return n % 2 != 0;
+}
+
+int main() {
+    int n, soma = 0;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        if (impar(i))
+            soma += i;
+    }
+
+    cout << soma;
+    return 0;
+}

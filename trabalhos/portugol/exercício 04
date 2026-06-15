@@ -1,0 +1,23 @@
+
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 06/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+	    inteiro qtd_num1, qtd_num2, qtd_num3, qtd_num4, qtd_media, qtd_resultado
+	    escreva("Quatro números da média.\n\n")
+	    leia(qtd_num1, qtd_num2, qtd_num3, qtd_num4)
+	   qtd_resultado = qtd_num1 + qtd_num2 + qtd_num3 + qtd_num4
+	   qtd_media = qtd_resultado / 4
+        escreva("\n A média aproximada é: " , qtd_media)
+	}
+}

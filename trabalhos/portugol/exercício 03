@@ -1,0 +1,20 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 09/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro base, altura, area
+	leia(base, altura)
+	area = base * altura / 2
+
+	escreva("Área: ", area)
+	}
+}

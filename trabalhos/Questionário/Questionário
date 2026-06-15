@@ -1,0 +1,73 @@
+Exercício 1
+
+O que é um algoritmo?
+É uma sequência de passos para resolver um problema ou realizar uma tarefa.
+
+Relação entre lógica de programação e algoritmos:
+A lógica de programação ajuda a criar algoritmos de forma organizada e correta.
+
+Exemplo: Fazer um café:
+
+Ferver a água.
+Colocar o pó no filtro.
+Passar a água pelo filtro.
+Servir o café.
+Exercício 2
+
+Algoritmo em linguagem natural:
+
+Ler três números.
+Comparar os números.
+Identificar o maior.
+Mostrar o resultado.
+
+Portugol:
+
+algoritmo "maior"
+
+var
+   n1, n2, n3: real
+
+inicio
+
+   leia(n1, n2, n3)
+
+   se (n1 >= n2) e (n1 >= n3) entao
+      escreva(n1)
+   senao se (n2 >= n1) e (n2 >= n3) entao
+      escreva(n2)
+   senao
+      escreva(n3)
+   fimse
+
+fimalgoritmo
+Exercício 3
+
+O que é o Portugol Studio?
+É uma ferramenta usada para aprender lógica de programação utilizando comandos em português.
+
+Código:
+
+algoritmo "dobro"
+
+var
+   n: inteiro
+
+inicio
+   leia(n)
+   escreva(n * 2)
+fimalgoritmo
+
+Experiência:
+A ferramenta é simples e fácil de usar, ideal para iniciantes.
+
+Exercício 4
+
+Por que IDEs, bibliotecas e frameworks são importantes?
+Porque agilizam o desenvolvimento e reduzem erros.
+
+O que aconteceria sem eles?
+Os programadores teriam que criar tudo do zero, gastando mais tempo e aumentando as chances de erros.
+
+Exemplo:
+Sem bibliotecas, seria necessário programar funções básicas, como cálculos de datas ou conexão com bancos de dados.

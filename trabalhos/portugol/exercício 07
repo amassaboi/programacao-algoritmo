@@ -1,0 +1,23 @@
+/*
+* Instituição: EtecVAV - Vasco Antonio Vechiarutti
+*
+* Arquivo: cavalos.por
+* Data: 09/03/2026
+* Autor: Cauan Machado de Souza
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro bse_menor, bse_maior, altura
+		escreva("Insira as bases do trapézio:\n \nBase menor:\n> ")
+		leia(bse_menor)
+		escreva("Base maior:\n> ")
+		leia(bse_maior)
+		escreva("Altura:\n> ")
+		leia(altura)
+		escreva("\nResultado:\n>>> ", (bse_menor + bse_maior) + altura / 2 , "\n ")	
+	}
+}

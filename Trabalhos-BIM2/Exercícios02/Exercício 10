@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int contarVogais(string texto) {
+    int contador = 0;
+
+    for (char c : texto) {
+        c = tolower(c);
+
+        if (c == 'a' || c == 'e' || c == 'i' ||
+            c == 'o' || c == 'u') {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+int contarConsoantes(string texto) {
+    int contador = 0;
+
+    for (char c : texto) {
+        c = tolower(c);
+
+        if (isalpha(c) &&
+            c != 'a' && c != 'e' && c != 'i' &&
+            c != 'o' && c != 'u') {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+int main() {
+    string nome;
+
+    getline(cin, nome);
+
+    cout << "Vogais: " << contarVogais(nome) << endl;
+    cout << "Consoantes: " << contarConsoantes(nome) << endl;
+
+    return 0;
+}

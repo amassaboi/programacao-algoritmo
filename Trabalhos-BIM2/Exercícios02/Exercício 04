@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -14,6 +15,9 @@ int mult(int a, int b) {
 }
 
 double divi(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
     return (double)a / b;
 }
 
@@ -25,7 +29,12 @@ int main() {
     cout << "Soma: " << soma(a, b) << endl;
     cout << "Subtracao: " << sub(a, b) << endl;
     cout << "Multiplicacao: " << mult(a, b) << endl;
-    cout << "Divisao: " << divi(a, b) << endl;
+    
+    if (b != 0) {
+        cout << "Divisao: " << divi(a, b) << endl;
+    } else {
+        cout << "Divisao: Erro! Nao e possivel dividir por zero." << endl;
+    }
 
     return 0;
 }

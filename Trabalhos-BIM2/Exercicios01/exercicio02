@@ -3,13 +3,17 @@ using namespace std;
 
 int main() {
     int n;
+    
+    // Mensagem adicionada aqui
+    cout << "Digite um número em potência que elevará o número 2: ";
     cin >> n;
     
     long long resultado = 1;
     
     for (int i = 0; i <= n; i++) {
+        // Texto corrigido com aspas para exibir corretamente na tela
         cout << "2^" << i << " = " << resultado << endl;
-        resultado *= 2; 
+        resultado *= 2;
     }
     
     return 0;

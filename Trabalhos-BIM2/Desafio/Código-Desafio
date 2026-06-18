@@ -1,27 +1,24 @@
 #include <iostream>
 using namespace std;
 
+int inicio[102];
+int total_tempo[102];
+bool ativo[102];
+bool visitado[102];
+
 int main() {
-    // Otimizando as operações de entrada e saída
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
     int N;
     cin >> N;
 
     int t = 0;
 
-    int inicio[101] = {0};
-    int soma[101] = {0};
-    bool ativo[101] = {false};
-    bool visitado[101] = {false}; // Para rastrear quem participou
-
     for (int i = 0; i < N; i++) {
         char op;
         int x;
         cin >> op >> x;
-
-        t++; // cada comando passa 1 unidade de tempo
 
         if (op == 'T') {
             t += x;
@@ -30,24 +27,24 @@ int main() {
             inicio[x] = t;
             ativo[x] = true;
             visitado[x] = true;
+            t++;
         }
         else if (op == 'E') {
             if (ativo[x]) {
-                soma[x] += t - inicio[x];
+                total_tempo[x] += t - inicio[x];
                 ativo[x] = false;
             }
+            t++;
         }
     }
 
     for (int i = 1; i <= 100; i++) {
-        // Imprime se o aluno entrou no laboratório pelo menos uma vez
         if (visitado[i]) {
             cout << i << " ";
-            if (ativo[i]) {
-                cout << -1 << "\n";
-            } else {
-                cout << soma[i] << "\n";
-            }
+            if (ativo[i])
+                cout << -1 << '\n';
+            else
+                cout << total_tempo[i] << '\n';
         }
     }
 

@@ -1,40 +1,46 @@
-
 #include <iostream>
+
 using namespace std;
 
-int soma(int a, int b) {
-    return a + b;
-}
+// Funções de operação
+int soma(int a, int b) { 
+    return a + b; 
+} 
 
-int sub(int a, int b) {
-    return a - b;
-}
+int sub(int a, int b) { 
+    return a - b; 
+} 
 
-int mult(int a, int b) {
-    return a * b;
-}
+int mult(int a, int b) { 
+    return a * b; 
+} 
 
-double divi(int a, int b) {
-    if (b == 0) {
-        return 0;
-    }
-    return (double)a / b;
-}
+double divi(int a, int b) { 
+    if (b == 0) { 
+        return 0; 
+    } 
+    return (double)a / b; 
+} 
 
-int main() {
-    int a, b;
+int main() { 
+    int a, b; 
 
-    cin >> a >> b;
-
-    cout << "Soma: " << soma(a, b) << endl;
-    cout << "Subtracao: " << sub(a, b) << endl;
-    cout << "Multiplicacao: " << mult(a, b) << endl;
+    // Mensagem de instrução corrigida
+    cout << "Digite duas sequências ou unidades numéricas para serem somadas, subtraidas, multiplicadas e divididas: " << endl; 
     
-    if (b != 0) {
-        cout << "Divisao: " << divi(a, b) << endl;
-    } else {
-        cout << "Divisao: Erro! Nao e possivel dividir por zero." << endl;
-    }
+    // Leitura dos valores
+    cin >> a >> b; 
 
-    return 0;
+    // Exibição dos resultados
+    cout << "Soma: " << soma(a, b) << endl; 
+    cout << "Subtracao: " << sub(a, b) << endl; 
+    cout << "Multiplicacao: " << mult(a, b) << endl; 
+
+    if (b != 0) { 
+        cout << "Divisao: " << divi(a, b) << endl; 
+    } else { 
+        cout << "Divisao: Erro! Nao e possivel dividir por zero." << endl; 
+    } 
+
+    return 0; 
 }

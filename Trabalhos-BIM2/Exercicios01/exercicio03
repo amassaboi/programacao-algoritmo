@@ -5,16 +5,20 @@ int main() {
     int n;
     int soma = 0;
 
+    // Mensagem explicativa para o usuário
+    cout << "Digite numeros positivos para somar ou um numero negativo para encerrar:" << endl;
+
     while (true) {
         cin >> n;
-
+        
         if (n < 0) {
-            break;
+            break; // Encerra o loop se o número for negativo
         }
-
-        soma += n;
+        
+        soma += n; // Adiciona o número positivo à soma
     }
 
+    // Correção das aspas para exibir o texto corretamente
     cout << "Soma = " << soma << endl;
 
     return 0;
